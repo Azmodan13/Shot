@@ -158,7 +158,6 @@ table {
   text-transform: uppercase;
 }
 .promo {
-background: url(../img/bgcss.png) right/1000px 600px no-repeat, url(../img/bghtml.png) left/1000px 600px no-repeat;  
   padding: 105px 0;
 }
 .promo_content {
@@ -166,6 +165,7 @@ background: url(../img/bgcss.png) right/1000px 600px no-repeat, url(../img/bghtm
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  background: url(../img/bgcss.png) right/1000px 600px no-repeat, url(../img/bghtml.png) left/1000px 600px no-repeat;  
 }
 .promo_subheader {
   font-weight: 700;
@@ -212,6 +212,9 @@ background: url(../img/bgcss.png) right/1000px 600px no-repeat, url(../img/bghtm
 }
 .catalog-item:hover .catalog-item_list {
   display: flex;
+}
+.catalog-item:hover .rectangle {
+  display: none;
 }
 
 .catalog-item_content img {
@@ -341,11 +344,9 @@ background: url(../img/bgcss.png) right/1000px 600px no-repeat, url(../img/bghtm
     left: 0;
     transform: none;
   }
-  .promo {
-    background: none;
-  }
   .promo_content{
     align-items: center;
+    background: none;
   }
   .promo_subheader{
     text-align: center;
